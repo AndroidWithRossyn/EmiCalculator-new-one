@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/rate"
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/theme"
+            android:icon="@drawable/ic_baseline_palette_24"
+            android:title="Theme" />
+        <item
+            android:id="@+id/currency"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="Change the Currency" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share the app" />
+    </group>
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/whiteTheme" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="8sp" android:textColor="#ffffff" android:gravity="center" android:background="#fbba34" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ad"/>
+        <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/adicon" android:padding="5dp" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/heading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+                    <TextView android:textSize="11sp" android:textColor="@color/blackTheme" android:id="@+id/advertisername" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+                    <RatingBar android:id="@+id/start_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="?android:attr/ratingBarStyleSmall"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="13sp" android:textColor="@color/colorGrey" android:id="@+id/body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text=""/>
+        </LinearLayout>
+        <com.google.android.gms.ads.formats.MediaView android:layout_gravity="center_horizontal" android:id="@+id/media_view" android:layout_width="match_parent" android:layout_height="140dp" android:layout_marginTop="0dp"/>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/calltoaction" android:background="@drawable/buttonshape" android:layout_width="match_parent" android:layout_height="25dp" android:layout_margin="5dp" android:text=""/>
+    </LinearLayout>
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

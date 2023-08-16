@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/ic_search"
+            android:hint="@string/countryCurrencyPicker_search"
+            android:imeOptions="actionUnspecified|actionGo|actionSend|actionDone|flagNoFullscreen"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txt_search"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:fadeScrollbars="true"
+        android:scrollbarFadeDuration="500"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical" />
+</LinearLayout>
